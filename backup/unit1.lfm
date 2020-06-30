@@ -1,8 +1,80 @@
 object Form1: TForm1
-  Left = 323
-  Height = 240
-  Top = 127
+  Left = 426
+  Height = 122
+  Top = 179
   Width = 320
-  Caption = 'Form1'
+  BorderStyle = bsSingle
+  Caption = 'Марафон'
+  ClientHeight = 122
+  ClientWidth = 320
   LCLVersion = '2.0.6.0'
+  object Button1: TButton
+    Left = 18
+    Height = 25
+    Top = 9
+    Width = 75
+    Caption = '"Об авторе"'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+  object Button2: TButton
+    Left = 18
+    Height = 25
+    Top = 63
+    Width = 75
+    Caption = 'Высчитать'
+    OnClick = Button2Click
+    OnKeyPress = KeyPress
+    TabOrder = 1
+  end
+  object Edit1: TEdit
+    Left = 234
+    Height = 23
+    Top = 9
+    Width = 80
+    OnKeyPress = KeyPress
+    TabOrder = 2
+    Text = 'Введите растояние'
+  end
+  object Edit2: TEdit
+    Left = 234
+    Height = 23
+    Top = 36
+    Width = 80
+    OnKeyPress = KeyPress
+    TabOrder = 3
+    Text = 'Ввеите время'
+  end
+  object Edit3: TEdit
+    Left = 234
+    Height = 23
+    Top = 63
+    Width = 80
+    OnKeyPress = KeyPress
+    TabOrder = 4
+  end
+  object Label1: TLabel
+    Left = 150
+    Height = 15
+    Top = 17
+    Width = 78
+    Caption = 'Растояние км.'
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 157
+    Height = 15
+    Top = 44
+    Width = 64
+    Caption = 'Время мин.'
+    ParentColor = False
+  end
+  object Label3: TLabel
+    Left = 153
+    Height = 15
+    Top = 71
+    Width = 75
+    Caption = 'Скорость м/с'
+    ParentColor = False
+  end
 end
